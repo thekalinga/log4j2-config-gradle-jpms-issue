@@ -3,5 +3,6 @@ module com.example {
   requires org.apache.logging.log4j;
   requires org.apache.logging.log4j.core;
 
-  opens com.example; // Not required, but exposed just for testing.
+  opens com.example; // Most likely not required, but exposing just for testing.
+  exports com.example; // Most likely not required, but exposing just for testing.
 }
