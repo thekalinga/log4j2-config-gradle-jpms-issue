@@ -1,1 +1,5 @@
-* Add the follwoing param `-Dorg.apache.logging.log4j.simplelog.StatusLogger.level=TRACE` if you want to see log4j2 configuration related logs
+Log4j2 configuration issue w.r.t Gradle & Java module system (>Java 9)
+
+The log4j2 framework does not use my custom `log4j2.xml`, instead it uses its own internal default xml. This is the reason why only `ERROR MSG` gets logged, not `DEBUG MSG`
+
+* Add the following param `-Dorg.apache.logging.log4j.simplelog.StatusLogger.level=TRACE` if you want to see log4j2 configuration related logs
